@@ -1,0 +1,12 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<p>{{ message }}</p>
+
+<form action="/posttest" method="post">
+    <input type="text" name="message">
+    <button type ="submit">skicka mig pls!</button>
+</form>
+
+{% endblock%}
