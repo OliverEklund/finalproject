@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.get("/", (req, res) => {
     res.render("index.njk",
-        { title: "Node js startrepo", message: "Använd det här repot som en grund för dina projekt." }
+        { title: "Olivers bloggsida", message: "Du är på webbsidan nu" }
     )
 })
 
@@ -16,12 +16,6 @@ router.get("/posts", async (req, res) => {
     res.json(rows)
 })
 
-router.get("/posttest", async (req, res) => {
-    console.log(req)
-    res.render("test.njk", {
-        message: "tjena"
-    })
-})
 
 router.get("/posttest", async (req, res) => {
     console.log(req)
